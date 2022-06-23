@@ -1,5 +1,5 @@
 FROM tomcat
 
-COPY  target/*.jar  myapp.jar
+COPY  target/*.war  /usr/local/tomcat/myapp.war
 
-ENTRYPOINT  [ "java" , "-jar" ,  "myapp.jar"  ]
+
