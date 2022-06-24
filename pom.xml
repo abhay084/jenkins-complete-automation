@@ -7,21 +7,19 @@
   <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+ <dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.0.5</version>
+  <type>maven-plugin</type>
+</dependency>
   <build>
     <plugins>
       <plugin>
-        <!-- Build an executable JAR -->
+        <!-- Build an executable war -->
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.0.2</version>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.0.5</version>
         <configuration>
           <archive>
             <manifest>
